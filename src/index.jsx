@@ -2,17 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
+import Flat from './components/flats';
+import FlatList from './components/flatlist'
 
-const Hello = ({ name }) => {
+
+render() {
   return (
-    <div>
-      Hello,
-      {name}
-    </div>
-  );
-};
-
-const root = document.getElementById('root');
-if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+      <FlatList />
+    )
 }
+
